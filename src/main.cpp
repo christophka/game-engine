@@ -1,14 +1,8 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include "Engine.h"
 
 auto main() -> int {
-    std::vector<std::string> msg{"Hello", "World"};
-
-    for (const std::string& word : msg) {
-        std::cout << word << " ";
-    }
-    std::cout << std::endl;
+    Engine engine;
+    engine.run();
 
     return 0;
 }

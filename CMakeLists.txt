@@ -4,7 +4,8 @@ project(GameEngine VERSION 0.1.0 LANGUAGES CXX)
 include(CTest)
 enable_testing()
 
-add_executable(GameEngine src/main.cpp)
+add_executable(GameEngine)
+target_sources(GameEngine PRIVATE src/main.cpp src/Engine.cpp)
 
 set_property(TARGET GameEngine PROPERTY CXX_STANDARD 20)
 
