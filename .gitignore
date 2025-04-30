@@ -1,2 +1,5 @@
-# Distributable
+# Build / Distributable
 dist
+
+# Cache
+.cache

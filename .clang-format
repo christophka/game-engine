@@ -1,0 +1,18 @@
+---
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: LLVM
+UseTab: Never
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 120
+---
+Language: Cpp
+PointerAlignment: Left
+DerivePointerAlignment: false
+SortIncludes: true
+AllowShortFunctionsOnASingleLine: None
+IndentCaseLabels: true
+ReflowComments: true
+Cpp11BracedListStyle: true
+AlignConsecutiveAssignments: Consecutive
+---

@@ -1,0 +1,7 @@
+{
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    "editor.formatOnSave": true,
+}
