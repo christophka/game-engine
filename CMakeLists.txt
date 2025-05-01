@@ -5,7 +5,8 @@ include(CTest)
 enable_testing()
 
 add_executable(GameEngine)
-target_sources(GameEngine PRIVATE src/main.cpp src/Engine.cpp)
+target_sources(GameEngine PRIVATE src/main.cpp)
+add_subdirectory(src/Runtime)
 
 set_property(TARGET GameEngine PROPERTY CXX_STANDARD 20)
 
