@@ -1,6 +1,7 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#include <glm/vec2.hpp>
 #include <string>
 
 class Engine {
@@ -20,7 +21,7 @@ class Engine {
     /** User input. */
     std::string user_input;
     /** current player position. */
-    int player_pos = 0;
+    glm::vec2 player_pos = glm::vec2(0.0F, 0.0F);
 };
 
 #endif

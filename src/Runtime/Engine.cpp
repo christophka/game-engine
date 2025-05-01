@@ -1,5 +1,6 @@
 #include "Engine.h"
 
+#include <glm/vec2.hpp>
 #include <iostream>
 #include <string>
 
@@ -24,13 +25,15 @@ void Engine::input() {
 
 void Engine::update() {
     // update
+    glm::vec2 move = glm::vec2(0.0F, 0.0F);
     if (user_input == "e") {
-        player_pos++;
+        move = glm::vec2(1.0F, 0.0F);
     } else if (user_input == "w") {
-        player_pos--;
+        move = glm::vec2(-1.0F, 0.0F);
     }
+    player_pos += (move);
 }
 
 void Engine::render() const {
-    std::cout << "Player position: " << player_pos << std::endl;
+    std::cout << "Player position: " << player_pos.x << std::endl;
 }

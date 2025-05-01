@@ -5,10 +5,12 @@ include(CTest)
 enable_testing()
 
 add_executable(GameEngine)
+# Add third party libs
+target_include_directories(GameEngine PRIVATE src/ThirdParty/glm@1.0.1)
 target_sources(GameEngine PRIVATE src/main.cpp)
 add_subdirectory(src/Runtime)
 
-set_property(TARGET GameEngine PROPERTY CXX_STANDARD 20)
+set_property(TARGET GameEngine PROPERTY CXX_STANDARD 20) 
 
 # Enable compile command export for clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

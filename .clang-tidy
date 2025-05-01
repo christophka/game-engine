@@ -11,10 +11,11 @@ Checks: >
   -cppcoreguidelines-pro-bounds-pointer-arithmetic,
   -cppcoreguidelines-avoid-magic-numbers,
   -modernize-use-trailing-return-type,
-  -modernize-use-auto
+  -modernize-use-auto,
+  -cppcoreguidelines-pro-type-union-access
 
 WarningsAsErrors: '*'
-HeaderFilterRegex: '.*'
+HeaderFilterRegex: '^(?!.*glm).*$'
 AnalyzeTemporaryDtors: true
 
 CheckOptions:
